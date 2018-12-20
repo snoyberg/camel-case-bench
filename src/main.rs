@@ -12,6 +12,11 @@ struct Bench {
 fn get_benches() -> Vec<Bench> {
     vec!
         [ Bench {
+            name: "c-inplace",
+            compiler: "g++",
+            args: vec!["-O2", "impls/c-inplace.c", "-o", "exes/c-inplace"],
+        }
+        , Bench {
             name: "rust-inplace",
             compiler: "rustc",
             args: vec!["-O", "impls/rust-inplace.rs", "-o", "exes/rust-inplace"],
