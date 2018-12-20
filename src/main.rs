@@ -22,14 +22,19 @@ fn get_benches() -> Vec<Bench> {
             args: vec!["-O", "impls/rust-inplace.rs", "-o", "exes/rust-inplace"],
         }
         , Bench {
-            name: "haskell-string",
-            compiler: "stack",
-            args: vec!["ghc", "--", "-O2", "impls/haskell-string.hs", "-o", "exes/haskell-string"],
+            name: "rust-iterator",
+            compiler: "rustc",
+            args: vec!["-O", "impls/rust-iterator.rs", "-o", "exes/rust-iterator"],
         }
         , Bench {
             name: "haskell-bytestring-simple",
             compiler: "stack",
             args: vec!["ghc", "--", "-O2", "impls/haskell-bytestring-simple.hs", "-o", "exes/haskell-bytestring-simple"],
+        }
+        , Bench {
+            name: "haskell-string",
+            compiler: "stack",
+            args: vec!["ghc", "--", "-O2", "impls/haskell-string.hs", "-o", "exes/haskell-string"],
         }
         ]
 }
