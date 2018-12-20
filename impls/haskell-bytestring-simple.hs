@@ -1,5 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Data.Word
+import Data.Monoid
 import Data.Char (toUpper)
 import qualified Data.ByteString.Lazy as L
 import qualified Data.ByteString.Lazy.Char8 as L8
