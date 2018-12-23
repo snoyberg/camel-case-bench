@@ -15,3 +15,8 @@ Running the benchmarks:
 
 * Install the Rust toolchain
 * Run `cargo run --release`
+
+Running the haskell-based benchmarks
+
+* `curl http://www.gutenberg.org/files/2600/2600-0.txt -o war-and-peace.txt`
+* `./main.hs`
